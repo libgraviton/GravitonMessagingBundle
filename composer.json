@@ -4,6 +4,9 @@
   "require": {
     "jdare/clank-bundle": "@dev"
   },
+  "autoload": {
+    "psr-0": { "Graviton\\MessagingBundle": "./" }
+  },
   "extra": {
     "graviton-config-import": true
   }
