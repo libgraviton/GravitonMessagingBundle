@@ -1,0 +1,10 @@
+{
+  "name": "graviton/GravitonMessagingBundle",
+  "version": "0.0.1",
+  "require": {
+    "jdare/clank-bundle": "*"
+  },
+  "extras": {
+    "graviton-config-import": true
+  }
+}
