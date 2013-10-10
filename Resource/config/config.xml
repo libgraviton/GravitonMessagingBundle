@@ -12,7 +12,7 @@
     <clank:config>
         <clank:web_socket_server>
 	    <clank:port>%graviton.messaging.clank.web_socket_server.port%</clank:port>
-	    <clank:host>%graviton.messaging.clank.web_socket_server.host%</clank:port>
+	    <clank:host>%graviton.messaging.clank.web_socket_server.host%</clank:host>
 	</clank:web_socket_server>
     </clank:config>
 
