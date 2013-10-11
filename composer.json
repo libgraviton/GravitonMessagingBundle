@@ -1,5 +1,5 @@
 {
-  "name": "graviton/GravitonMessagingBundle",
+  "name": "graviton/graviton-messaging-bundle",
   "version": "0.0.1",
   "require": {
     "jdare/clank-bundle": "@dev"
