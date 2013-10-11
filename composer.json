@@ -2,7 +2,7 @@
   "name": "graviton/graviton-messaging-bundle",
   "version": "0.0.1",
   "require": {
-    "jdare/clank-bundle": "@dev-master"
+    "jdare/clank-bundle": "0.1.*"
   },
   "autoload": {
     "psr-0": { "Graviton\\MessagingBundle": "src/" }
