@@ -8,6 +8,6 @@
     "psr-0": { "Graviton\\MessagingBundle": "src/" }
   },
   "extra": {
-    "graviton-config-import": "src/Graviton/MessageBundle/Resource/config/config.xml"
+    "graviton-config-import": "src/Graviton/MessagingBundle/Resource/config/config.xml"
   }
 }
