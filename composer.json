@@ -1,9 +1,20 @@
 {
   "name": "graviton/graviton-messaging-bundle",
   "version": "0.0.1",
+  "require-dev": {
+    "phpunit/phpunit": ">=3.7.0",
+    "libgraviton/codesniffer": ">=1.0.0"
+  },
   "require": {
+    "graviton/graviton": "@dev",
     "jdare/clank-bundle": "dev-master"
   },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:libgraviton/graviton.git"
+    }
+  ],
   "autoload": {
     "psr-0": { "Graviton\\MessagingBundle": "src/" }
   },

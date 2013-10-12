@@ -1,0 +1,11 @@
+language: php
+before_script:
+  - composer install --dev --no-interaction
+php:
+  - 5.4
+  - 5.3
+script:
+  - ./vendor/bin/phpcs --standard=PSR1 src/
+  - ./vendor/bin/phpcs --standard=PSR2 src/
+  - ./vendor/bin/phpcs --standard=ENTB src/
+  - ./vendor/bin/phpunit --coverage-text
