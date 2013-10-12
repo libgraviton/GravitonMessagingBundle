@@ -6,8 +6,19 @@
 
     <parameters>
         <parameter key="graviton.messaging.clank.web_socket_server.port">8080</parameter>
-        <parameter key="graviton.messaging.clank.web_socket_server.host">127.0.0.1</parameter>
+        <parameter key="graviton.messaging.clank.web_socket_server.host">0.0.0.0</parameter>
     </parameters>
+
+    <services>
+        <service id="clank.client_event.listener" class="Graviton\MessagingBundle\EventListener\ClankClientEventListener">
+	    <call method="setLogger">
+                <argument type="service" id="logger"/>
+            </call>
+            <tag name="kernel.event_listener" event="clank.client.connected" method="onClientConnect"/>
+            <tag name="kernel.event_listener" event="clank.client.disconnected" method="onClientDisconnect"/>
+            <tag name="kernel.event_listener" event="clank.client.error" method="onClientError"/>
+	</service>
+    </services>
 
     <clank:config>
         <clank:web_socket_server>
