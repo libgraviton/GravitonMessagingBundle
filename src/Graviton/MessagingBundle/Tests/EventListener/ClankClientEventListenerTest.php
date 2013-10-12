@@ -108,8 +108,7 @@ class ClankClientEventListenerTest extends \PHPUnit_Framework_TestCase
     protected function getClientEventMock(
         $resourceId,
         $className = 'JDare\ClankBundle\Event\ClientEvent'
-    )
-    {
+    ) {
         $clientEvent = $this->getMockBuilder($className)
             ->disableOriginalConstructor()
             ->getMock();
