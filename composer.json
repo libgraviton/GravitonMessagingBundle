@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "require-dev": {
     "phpunit/phpunit": ">=3.7.0",
-    "libgraviton/codesniffer": ">=1.0.0"
+    "libgraviton/codesniffer": ">=1.1.0"
   },
   "require": {
     "graviton/graviton": "@dev",
